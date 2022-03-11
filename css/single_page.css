@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: auto;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.container-2 {
+    background-color: #193532;
+}
+
+.product-details {
+    display: flex;
+    color: white;
+}
+
+.product-details img {
+    height: 80vh;
+    width: 40vw;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.product-info {
+    margin-top: 60px;
+    margin-left: 50px;
+    font-family: zilla slab;
+    width: 100%;
+    position: sticky;
+}
+
+.product-info h3.product-name {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3.product-price {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.quantity {
+    display: flex;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.number {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    /* border-top: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
+    margin: 0px;
+    color: white;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #aaa;
+    border-left: unset;
+    border-right: unset;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+div#increase {
+    margin: 0;
+    border: 1px solid #aaa;
+    border-left-color: unset;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    cursor: pointer;
+    /* font-weight: 600; */
+    font-size: 25px;
+    margin: 0 35px 0 0px
+}
+
+div#decrease {
+    place-items: center;
+    width: 46px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #aaa;
+    /* border-color: white; */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.qty {
+    display: flex;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.addtocart.btn {
+    /* padding: 0px 0 0 40px; */
+    border: 1px solid #fff;
+    color: #000;
+    font-family: 'Roboto';
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    /* margin: 0 0 0 30px; */
+    fill: white;
+    height: auto;
+    width: auto;
+    /* padding: -1px 1px -2px 65px; */
+    background-color: white;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* color: #eee; */
+}
+
+i.fa.fa-shopping-cart {
+    padding: 8px;
+}
+
+.qty-status {
+    padding: 25px 0 0 0;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    color: #eee;
+}
+
+p.description-title-1 {
+    padding: 20px 0px 0px 0px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+span.descrition-text {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+i.lni-minus {
+    align-self: center;
+    margin-left: auto;
+    /* font-family: lined-icon; */
+    font-size: small;
+}
+
+.qv-toggle {
+    /* display: flex; */
+    padding: 20px 0 0 0;
+}
+
+a.toggle {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+span.descrition-text {
+    /* letter-spacing: 1px; */
+    line-height: 25px;
+    font-family: 'Roboto';
+    color: #eee;
+    font-size: 14px;
+}
+
+div#overview {
+    padding-left: unset;
+}
+
+a:hover {
+    color: unset !important;
+}
+
+button {
+    border: unset;
+}
+
+.lni-minus::before {
+    content: "\e99f";
+}
+
+.lni-plus::before {
+    content: "\eb5c";
+}
+
+.op-6 {
+    opacity: 0.6 !important;
+}
+
+
+/* hr.solid {
+    border-top: 3px solid #bbb;
+} */
+
+@media only screen and (max-width: 980px) {
+    .product-details {
+        display: block;
+        text-align: center;
+    }
+    .container {
+        padding-bottom: 70px !important;
+    }
+    .product-details img {
+        height: 73vh;
+        /* margin: unset; */
+        width: 70vw;
+        margin-bottom: unset;
+    }
+    .product-info {
+        justify-content: left;
+        /* position: sticky; */
+        text-align: justify;
+        margin: unset;
+    }
+    .product-info h3.product-name {
+        /* margin-top: 50px; */
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
